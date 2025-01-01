@@ -87,247 +87,6 @@
     </header>
     <!-- end header section -->
   </div>
-
-<!-- category section -->
-<section class="category_section layout_padding" style="background-color: #f0f0f0; padding: 50px 0;">
-  <div class="container">
-    <div class="heading_container">
-      <h2 style="color: #4CAF50; text-align: center; font-family: 'Poppins', sans-serif; margin-bottom: 30px;">
-        Learning And Assignment
-      </h2>
-    </div>
-    <div class="category_container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-      <!-- Category 1: ER Model -->
-      <div class="box" onclick="openModal('erModelModal')" style="cursor: pointer; text-align: center; background: linear-gradient(135deg, #4CAF50, #8BC34A); border-radius: 10px; padding: 20px; width: 200px; transition: transform 0.3s; color: white;">
-        <div class="img-box">
-          <img src="images/c1.png" alt="" style="width: 100%; border-radius: 8px;">
-        </div>
-        <div class="detail-box">
-          <h5 style="margin-top: 10px; font-family: 'Poppins', sans-serif; color: white;">
-            ER Model
-          </h5>
-        </div>
-      </div>
-
-      <!-- Category 2: Relational Schema -->
-      <div class="box" onclick="openModal('relationalSchemaModal')" style="cursor: pointer; text-align: center; background: linear-gradient(135deg, #3F51B5, #5C6BC0); border-radius: 10px; padding: 20px; width: 200px; transition: transform 0.3s; color: white;">
-        <div class="img-box">
-          <img src="images/c2.png" alt="" style="width: 100%; border-radius: 8px;">
-        </div>
-        <div class="detail-box">
-          <h5 style="margin-top: 10px; font-family: 'Poppins', sans-serif; color: white;">
-            Relational Schema
-          </h5>
-        </div>
-      </div>
-
-      <!-- Category 3: SQL -->
-      <div class="box" onclick="openModal('sqlModal')" style="cursor: pointer; text-align: center; background: linear-gradient(135deg, #FF9800, #FFB74D); border-radius: 10px; padding: 20px; width: 200px; transition: transform 0.3s; color: white;">
-        <div class="img-box">
-          <img src="images/c3.png" alt="" style="width: 100%; border-radius: 8px;">
-        </div>
-        <div class="detail-box">
-          <h5 style="margin-top: 10px; font-family: 'Poppins', sans-serif; color: white;">
-            SQL
-          </h5>
-        </div>
-      </div>
-
-      <!-- Category 4: Normalization -->
-      <div class="box" onclick="openModal('normalizationModal')" style="cursor: pointer; text-align: center; background: linear-gradient(135deg, #E91E63, #F06292); border-radius: 10px; padding: 20px; width: 200px; transition: transform 0.3s; color: white;">
-        <div class="img-box">
-          <img src="images/c4.png" alt="" style="width: 100%; border-radius: 8px;">
-        </div>
-        <div class="detail-box">
-          <h5 style="margin-top: 10px; font-family: 'Poppins', sans-serif; color: white;">
-            Normalization
-          </h5>
-        </div>
-      </div>
-
-      <!-- Category 5: Transaction Process -->
-      <div class="box" onclick="openModal('transactionModal')" style="cursor: pointer; text-align: center; background: linear-gradient(135deg, #009688, #4DB6AC); border-radius: 10px; padding: 20px; width: 200px; transition: transform 0.3s; color: white;">
-        <div class="img-box">
-          <img src="images/c5.png" alt="" style="width: 100%; border-radius: 8px;">
-        </div>
-        <div class="detail-box">
-          <h5 style="margin-top: 10px; font-family: 'Poppins', sans-serif; color: white;">
-            Transaction Process
-          </h5>
-        </div>
-      </div>
-
-      <!-- Category 6: Structured Enquiry -->
-      <div class="box" onclick="openModal('structuredEnquiryModal')" style="cursor: pointer; text-align: center; background: linear-gradient(135deg, #9C27B0, #BA68C8); border-radius: 10px; padding: 20px; width: 200px; transition: transform 0.3s; color: white;">
-        <div class="img-box">
-          <img src="images/c6.png" alt="" style="width: 100%; border-radius: 8px;">
-        </div>
-        <div class="detail-box">
-          <h5 style="margin-top: 10px; font-family: 'Poppins', sans-serif; color: white;">
-            Structured Enquiry
-          </h5>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Modal Templates -->
-<div id="erModelModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('erModelModal')">&times;</span>
-    <h3 style="color: #4CAF50; font-family: 'Poppins', sans-serif;">ER Model</h3>
-    <img src="ER1.jpg" alt="ER Model 1">
-    <img src="ER2.jpg" alt="ER Model 2">
-    <img src="ER3.jpg" alt="ER Model 3">
-  </div>
-</div>
-
-<div id="relationalSchemaModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('relationalSchemaModal')">&times;</span>
-    <h3 style="color: #3F51B5; font-family: 'Poppins', sans-serif;">Relational Schema</h3>
-    <img src="RS1.jpg" alt="Relational Schema 1">
-    <img src="RS2.jpg" alt="Relational Schema 2">
-    <img src="RS3.jpg" alt="Relational Schema 3">
-  </div>
-</div>
-
-<div id="sqlModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('sqlModal')">&times;</span>
-    <h3 style="color: #FF9800; font-family: 'Poppins', sans-serif;">SQL</h3>
-    <img src="SQL1.jpg" alt="SQL 1">
-    <img src="SQL2.jpg" alt="SQL 2">
-    <img src="SQL3.jpg" alt="SQL 3">
-    <img src="SQL4.jpg" alt="SQL 4">
-    <img src="SQL5.jpg" alt="SQL 5">
-    <img src="SQL6.jpg" alt="SQL 6">
-    <img src="SQL7.jpg" alt="SQL 7">
-    <img src="SQL8.jpg" alt="SQL 8">
-    <img src="SQL9.jpg" alt="SQL 9">
-    <img src="SQL10.jpg" alt="SQL 10">
-  </div>
-</div>
-
-<div id="normalizationModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('normalizationModal')">&times;</span>
-    <h3 style="color: #E91E63; font-family: 'Poppins', sans-serif;">Normalization</h3>
-    <img src="NF1.jpg" alt="Normalization 1">
-    <img src="NF5.jpg" alt="Normalization 2">
-    <img src="NF3.jpg" alt="Normalization 3">
-    <img src="NF2.jpg" alt="Normalization 4">
-    <img src="NF4.jpg" alt="Normalization 5">
-  </div>
-</div>
-
-<div id="transactionModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('transactionModal')">&times;</span>
-    <h3 style="color: #009688; font-family: 'Poppins', sans-serif;">Transaction Process</h3>
-    <img src="NF6.jpg" alt="Transaction Process 1">
-    <img src="TP1.jpg" alt="Transaction Process 2">
-    <img src="TP2.jpg" alt="Transaction Process 3">
-  </div>
-</div>
-
-<div id="structuredEnquiryModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('structuredEnquiryModal')">&times;</span>
-    <h3 style="color: #9C27B0; font-family: 'Poppins', sans-serif;">Structured Enquiry</h3>
-    <img src="SE21.jpg" alt="Structured Enquiry 21">
-    <img src="SE1.jpg" alt="Structured Enquiry 1">
-    <img src="SE2.jpg" alt="Structured Enquiry 2">
-    <img src="SE3.jpg" alt="Structured Enquiry 3">
-    <img src="SE4.jpg" alt="Structured Enquiry 4">
-    <img src="SE5.jpg" alt="Structured Enquiry 5">
-    <img src="SE6.jpg" alt="Structured Enquiry 6">
-    <img src="SE7.jpg" alt="Structured Enquiry 7">
-    <img src="SE8.jpg" alt="Structured Enquiry 8">
-    <img src="SE9.jpg" alt="Structured Enquiry 9">
-    <img src="SE10.jpg" alt="Structured Enquiry 10">
-    <img src="SE11.jpg" alt="Structured Enquiry 11">
-    <img src="SE12.jpg" alt="Structured Enquiry 12">
-    <img src="SE13.jpg" alt="Structured Enquiry 13">
-    <img src="SE14.jpg" alt="Structured Enquiry 14">
-    <img src="SE15.jpg" alt="Structured Enquiry 15">
-    <img src="SE16.jpg" alt="Structured Enquiry 16">
-    <img src="SE17.jpg" alt="Structured Enquiry 17">
-    <img src="SE18.jpg" alt="Structured Enquiry 18">
-    <img src="SE19.jpg" alt="Structured Enquiry 19">
-    <img src="SE20.jpg" alt="Structured Enquiry 20">
-    <img src="SE29.jpg" alt="Structured Enquiry 29">
-    <img src="SE22.jpg" alt="Structured Enquiry 22">
-    <img src="SE23.jpg" alt="Structured Enquiry 23">
-    <img src="SE24.jpg" alt="Structured Enquiry 24">
-    <img src="SE25.jpg" alt="Structured Enquiry 25">
-    <img src="SE26.jpg" alt="Structured Enquiry 26">
-    <img src="SE27.jpg" alt="Structured Enquiry 27">
-    <img src="SE28.jpg" alt="Structured Enquiry 28">
-  </div>
-</div>
-
-<!-- Modal CSS -->
-<style>
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.8);
-}
-.modal-content {
-  background-color: #fff;
-  margin: 5% auto;
-  padding: 20px;
-  border-radius: 10px;
-  width: 70%;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-.modal-content img {
-  margin: 10px;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.close {
-  color: #fff;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  background: #333;
-  padding: 5px 10px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.close:hover,
-.close:focus {
-  background: #444;
-}
-.box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-}
-</style>
-
-<!-- Modal JavaScript -->
-<script>
-function openModal(modalId) {
-  document.getElementById(modalId).style.display = "block";
-}
-
-function closeModal(modalId) {
-  document.getElementById(modalId).style.display = "none";
-}
-</script>
-<!-- end category section -->
-
 <!-- ASSIGNIMENT -->
 
 <!DOCTYPE html>
@@ -420,12 +179,83 @@ function closeModal(modalId) {
 
 
 
+  
+  <!-- category section -->
 
+  <section class="category_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Learning And Assisgnment
+        </h2>
+      </div>
+      <div class="category_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="images/c1.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              ER Model
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/c2.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Realtional Schema
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/c3.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              SQl
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/c4.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Nornalization 
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/c5.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Transaction Process
+            </h5>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/c6.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Structured Enquiry
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end category section -->
 
-
-
-
-   <!-- info section -->
+  <!-- info section -->
 
   <section class="info_section ">
     <div class="info_container layout_padding-top">
@@ -484,16 +314,16 @@ function closeModal(modalId) {
                 Offices
               </h5>
               <p>
-                B V B ENGINEERING COLLAGE HUBLI
+                Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
               </p>
             </div>
 
             <div class="col-md-3 col-lg-2 offset-lg-1">
               <h5>
-                PROFESSOR
+                Information
               </h5>
               <p>
-                DR MANOHAR MADAGI
+                Readable content of a page when looking at its layoutreadable content of a page when looking at its layout
               </p>
             </div>
 
@@ -523,7 +353,7 @@ function closeModal(modalId) {
                     </div>
                     <div class="detail-box">
                       <h6>
-                        Sharstri Nagar 2nd Cross House No 36,Near Bal Gopal Shishu Vatika Dharwad
+                        Location
                       </h6>
                     </div>
                   </a>
@@ -535,7 +365,7 @@ function closeModal(modalId) {
                     </div>
                     <div class="detail-box">
                       <h6>
-                        01fe23bcs259@kletech.ac.in
+                        demo@gmail.com
                       </h6>
                     </div>
                   </a>
@@ -547,7 +377,7 @@ function closeModal(modalId) {
                     </div>
                     <div class="detail-box">
                       <h6>
-                        Call +91 6360568552
+                        Call +01 1234567890
                       </h6>
                     </div>
                   </a>
