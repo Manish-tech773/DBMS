@@ -94,7 +94,7 @@
   <div class="container">
     <div class="heading_container">
       <h2 style="color: #4CAF50; text-align: center; font-family: 'Poppins', sans-serif; margin-bottom: 30px;">
-        Contact
+        Learning And Assisgnment
       </h2>
     </div>
     <div class="category_container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
@@ -174,100 +174,322 @@
 </section>
 
 <!-- Modal Templates -->
-<div id="erModelModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('erModelModal')">&times;</span>
-    <h3 style="color: #4CAF50; font-family: 'Poppins', sans-serif;">ER Model</h3>
-    <img src="ER1.jpg" alt="ER Model 1">
-    <img src="ER2.jpg" alt="ER Model 2">
-    <img src="ER3.jpg" alt="ER Model 3">
+
+
+<div id="erModelModal" class="modal" style="font-family: 'Poppins', sans-serif;">
+  <div class="modal-content" style="padding: 20px; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <span class="close" onclick="closeModal('erModelModal')" style="font-size: 24px; cursor: pointer; float: right; color: #4CAF50;">&times;</span>
+    <h3 style="color: #4CAF50; margin-bottom: 20px;">ER Model</h3>
+
+    <h4 style="color: #FF5722;">Entity-Relationship Model:</h4>
+    <p style="margin-bottom: 15px;">The ER model is a conceptual framework used to visually represent data relationships in a database. It simplifies complex structures by illustrating entities, their attributes, and the relationships between them.</p>
+
+    <h4 style="color: #2196F3;">Key Features:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: disc; padding-left: 20px;">
+      <li><strong>Entities:</strong> Represent objects or things within the system, such as employees or products.</li>
+      <li><strong>Attributes:</strong> Define the properties or details of entities, like an employee's name or a product's price.</li>
+      <li><strong>Relationships:</strong> Show the associations between entities, such as an employee working in a department.</li>
+    </ul>
+
+    <h4 style="color: #4CAF50;">ER Model Overview</h4>
+    <p style="margin-bottom: 15px;">The project aimed to design a comprehensive ER model to capture the structure and data requirements of an online retail system, focusing on customer interactions, product inventory, and order processing.</p>
+
+    <h4 style="color: #9C27B0;">Features:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: circle; padding-left: 20px;">
+      <li>Defined core entities such as Customers, Products, Orders, and Categories.</li>
+      <li>Implemented relationships like "Customer Places Order" and "Order Contains Products."</li>
+      <li>Applied structural constraints, including cardinality and participation, to ensure data integrity.</li>
+    </ul>
+
+    <h4 style="color: #FFC107;">Challenges and Solutions:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: square; padding-left: 20px;">
+      <li><strong>Challenge:</strong> Efficiently modeling many-to-many relationships between Orders and Products.</li>
+      <li><strong>Solution:</strong> Introduced a junction table with attributes for quantity and price per order.</li>
+      <li><strong>Challenge:</strong> Ensuring referential integrity across multiple relationships.</li>
+      <li><strong>Solution:</strong> Implemented primary and foreign key constraints for all relationships.</li>
+    </ul>
+
+    <h4 style="color: #00BCD4;">Reflection:</h4>
+    <p style="margin-bottom: 0;">This assignment enhanced my understanding of entity relationships, structural constraints, and the practical challenges of database modeling. I gained valuable experience in applying relational algebra concepts to ensure the model aligns with real-world data scenarios.</p>
+    
+    <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="img-box">
+        <img src="HOSPITAL.jpg" alt="ER Model Diagram" style="max-width: 100%; height: auto;"> 
+      </div>
+    </div>
   </div>
 </div>
 
-<div id="relationalSchemaModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('relationalSchemaModal')">&times;</span>
-    <h3 style="color: #3F51B5; font-family: 'Poppins', sans-serif;">Relational Schema</h3>
-    <img src="RS1.jpg" alt="Relational Schema 1">
-    <img src="RS2.jpg" alt="Relational Schema 2">
-    <img src="RS3.jpg" alt="Relational Schema 3">
+
+
+
+
+
+
+
+<div id="relationalSchemaModal" class="modal" style="font-family: 'Poppins', sans-serif;">
+  <div class="modal-content" style="padding: 20px; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <span class="close" onclick="closeModal('relationalSchemaModal')" style="font-size: 24px; cursor: pointer; float: right; color: #3F51B5;">&times;</span>
+    <h3 style="color: #3F51B5; margin-bottom: 20px;">Relational Schema</h3>
+
+    <h4 style="color: #E91E63;">Challenges:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: disc; padding-left: 20px;">
+      <li>Designing a schema that maintains a balance between normalization and performance.</li>
+      <li>Managing data redundancy without compromising retrieval efficiency.</li>
+      <li>Ensuring robust backup and recovery mechanisms for database security.</li>
+    </ul>
+
+    <h4 style="color: #9C27B0;">Reflection:</h4>
+    <p style="margin-bottom: 15px;">A company database is a critical resource for efficiently organizing and managing essential business information. It supports the storage of key data related to employees, customers, products, finances, and various operational aspects.</p>
+
+    <h4 style="color: #4CAF50;">Key Learnings:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: circle; padding-left: 20px;">
+      <li><strong>Centralized Data Management:</strong> A unified database eliminates fragmented data, ensuring all departments access consistent and current information.</li>
+      <li><strong>Data Security:</strong> Employing role-based access controls and encryption safeguards sensitive details, such as employee salaries and customer payment records.</li>
+      <li><strong>Scalability:</strong> The database structure must evolve to accommodate growth and handle increased data volume without sacrificing performance.</li>
+      <li><strong>Integrity and Accuracy:</strong> Constraints like primary and foreign keys ensure data reliability, avoiding duplication and inconsistencies.</li>
+      <li><strong>Efficient Querying:</strong> Well-structured databases with proper indexing and normalization enable seamless execution of complex queries and support informed decision-making.</li>
+      <div class="container">
+        <div class="assignment">
+            <h2></h2>
+            <a href="Flight_1.pdf" target="_blank">Flight DataBase </a>
+        </div>   
+    </ul>
   </div>
 </div>
 
-<div id="sqlModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('sqlModal')">&times;</span>
-    <h3 style="color: #FF9800; font-family: 'Poppins', sans-serif;">SQL</h3>
-    <img src="SQL1.jpg" alt="SQL 1">
-    <img src="SQL2.jpg" alt="SQL 2">
-    <img src="SQL3.jpg" alt="SQL 3">
-    <img src="SQL4.jpg" alt="SQL 4">
-    <img src="SQL5.jpg" alt="SQL 5">
-    <img src="SQL6.jpg" alt="SQL 6">
-    <img src="SQL7.jpg" alt="SQL 7">
-    <img src="SQL8.jpg" alt="SQL 8">
-    <img src="SQL9.jpg" alt="SQL 9">
-    <img src="SQL10.jpg" alt="SQL 10">
+ 
+
+
+
+
+
+
+
+
+<div id="sqlModal" class="modal" style="font-family: 'Poppins', sans-serif;">
+  <div class="modal-content" style="padding: 20px; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <span class="close" onclick="closeModal('sqlModal')" style="font-size: 24px; cursor: pointer; float: right; color: #FF9800;">&times;</span>
+    <h3 style="color: #FF9800; margin-bottom: 20px;">SQL</h3>
+
+    <h4 style="color: #FF5722;">Structured Query Language (SQL):</h4>
+    <p style="margin-bottom: 15px;">SQL is a standard programming language specifically designed for managing and manipulating relational databases. It allows users to create, read, update, and delete data efficiently.</p>
+
+    <h4 style="color: #2196F3;">Key Features:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: disc; padding-left: 20px;">
+      <li><strong>Data Definition Language (DDL):</strong> Used for defining database schemas and structures, including commands like CREATE, ALTER, and DROP.</li>
+      <li><strong>Data Manipulation Language (DML):</strong> Used for managing data within schemas, including INSERT, UPDATE, DELETE, and SELECT statements.</li>
+      <li><strong>Data Control Language (DCL):</strong> Used for controlling access to data in the database, including GRANT and REVOKE commands.</li>
+    </ul>
+
+    <h4 style="color: #4CAF50;">SQL Overview</h4>
+    <p style="margin-bottom: 15px;">This section focused on developing complex SQL queries to efficiently retrieve, update, and manage data within a relational database system. The goal was to leverage SQL's full capabilities to ensure optimal performance and accuracy in data handling.</p>
+
+    <h4 style="color: #9C27B0;">Challenges and Solutions:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: circle; padding-left: 20px;">
+      <li><strong>Challenge:</strong> Writing efficient queries to handle large datasets without impacting performance.</li>
+      <li><strong>Solution:</strong> Utilized indexing and optimized JOIN operations to enhance query execution speed.</li>
+      <li><strong>Challenge:</strong> Ensuring data integrity during concurrent transactions.</li>
+      <li><strong>Solution:</strong> Implemented transaction control commands (BEGIN, COMMIT, ROLLBACK) to maintain consistency.</li>
+    </ul>
+
+    <h4 style="color: #FFC107;">Reflection:</h4>
+    <p style="margin-bottom: 0;">This assignment deepened my understanding of SQL as a powerful tool for database management. I learned how to craft complex queries that can efficiently handle data retrieval and manipulation while ensuring data integrity and performance optimization.</p>
+
+    <h4 style="color: #00BCD4;">Practical Applications:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: square; padding-left: 20px;">
+      <li>Developing reports by aggregating data from various tables using GROUP BY and JOIN operations.</li>
+      <li>Implementing data validations using CHECK constraints to ensure data quality.</li>
+      <li>Creating stored procedures for routine data operations to enhance efficiency and security.</li>
+    </ul>
+
+    <div class="collapse show" id="collapseSQL" aria-labelledby="headingSQL" data-parent="#accordion">
+      <div class="img-box">
+        <a href="Sailor-Boat-New.pdf.pdf" target="_blank">Sailor Boat </a>
+      </div>
+    </div>
   </div>
 </div>
 
-<div id="normalizationModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('normalizationModal')">&times;</span>
-    <h3 style="color: #E91E63; font-family: 'Poppins', sans-serif;">Normalization</h3>
-    <img src="NF1.jpg" alt="Normalization 1">
-    <img src="NF5.jpg" alt="Normalization 2">
-    <img src="NF3.jpg" alt="Normalization 3">
-    <img src="NF2.jpg" alt="Normalization 4">
-    <img src="NF4.jpg" alt="Normalization 5">
+
+
+
+
+
+
+<div id="normalizationModal" class="modal" style="font-family: 'Poppins', sans-serif;">
+  <div class="modal-content" style="padding: 20px; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <span class="close" onclick="closeModal('normalizationModal')" style="font-size: 24px; cursor: pointer; float: right; color: #E91E63;">&times;</span>
+    <h3 style="color: #E91E63; margin-bottom: 20px;">Normalization</h3>
+
+    <h4 style="color: #FF5722;">Normalization Overview:</h4>
+    <p style="margin-bottom: 15px;">Normalization is a systematic approach to organizing data in a database to reduce redundancy and improve data integrity. The goal is to decompose tables into smaller, related tables without losing data integrity.</p>
+
+    <h4 style="color: #2196F3;">Key Concepts:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: disc; padding-left: 20px;">
+      <li><strong>First Normal Form (1NF):</strong> Ensures that all attributes are atomic and each record is unique.</li>
+      <li><strong>Second Normal Form (2NF):</strong> Requires that all non-key attributes are fully functional dependent on the primary key.</li>
+      <li><strong>Third Normal Form (3NF):</strong> Eliminates transitive dependencies, ensuring that non-key attributes depend only on the primary key.</li>
+    </ul>
+
+    <h4 style="color: #4CAF50;">Normalization Process</h4>
+    <p style="margin-bottom: 15px;">This section focused on applying normalization techniques to transform unnormalized tables into well-structured relations, enhancing data integrity and retrieval efficiency.</p>
+
+    <h4 style="color: #9C27B0;">Challenges and Solutions:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: circle; padding-left: 20px;">
+      <li><strong>Challenge:</strong> Identifying and eliminating redundancy while ensuring no loss of data.</li>
+      <li><strong>Solution:</strong> Conducted thorough analysis of existing data structures and applied normalization rules progressively.</li>
+      <li><strong>Challenge:</strong> Maintaining the balance between normalization and performance.</li>
+      <li><strong>Solution:</strong> Applied normalization up to 3NF while strategically denormalizing where performance gains were necessary.</li>
+    </ul>
+
+    <h4 style="color: #FFC107;">Reflection:</h4>
+    <p style="margin-bottom: 0;">This assignment significantly improved my understanding of database normalization and its importance in maintaining data integrity and efficiency. I learned how proper normalization can simplify data management and enhance query performance.</p>
+
+    <h4 style="color: #00BCD4;">Practical Applications:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: square; padding-left: 20px;">
+      <li>Transforming a flat file database into a set of normalized relations to eliminate redundancy.</li>
+      <li>Implementing normalization in designing schemas for new database systems to ensure efficient data storage.</li>
+      <li>Utilizing normalization techniques in data migration projects to ensure data integrity and consistency.</li>
+    </ul>
+
+    <h4 style="color: #FF5722;">Assignments:</h4>
+    <div class="container" style="margin-bottom: 15px;">
+      <div class="assignment" style="margin-bottom: 10px;">
+        <h5 style="color: #333;">Assignment 1</h5>
+        <a href="ass1.pdf" target="_blank" style="display: inline-block; background: #5a5af0; color: #fff; text-decoration: none; font-size: 0.9em; padding: 5px 10px; border-radius: 5px;">View Assignment 1</a>
+      </div>
+
+      <div class="assignment" style="margin-bottom: 10px;">
+        <h5 style="color: #333;">Assignment 2</h5>
+        <a href="ass2.pdf" target="_blank" style="display: inline-block; background: #5a5af0; color: #fff; text-decoration: none; font-size: 0.9em; padding: 5px 10px; border-radius: 5px;">View Assignment 2</a>
+      </div>
+      </div>
+    </div>
   </div>
 </div>
 
-<div id="transactionModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('transactionModal')">&times;</span>
-    <h3 style="color: #009688; font-family: 'Poppins', sans-serif;">Transaction Process</h3>
-    <img src="NF6.jpg" alt="Transaction Process 1">
-    <img src="TP1.jpg" alt="Transaction Process 2">
-    <img src="TP2.jpg" alt="Transaction Process 3">
+
+
+
+
+
+
+
+<div id="transactionModal" class="modal" style="font-family: 'Poppins', sans-serif;">
+  <div class="modal-content" style="padding: 20px; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <span class="close" onclick="closeModal('transactionModal')" style="font-size: 24px; cursor: pointer; float: right; color: #009688;">&times;</span>
+    <h3 style="color: #009688; margin-bottom: 20px;">Transaction Process</h3>
+
+    <h4 style="color: #FF5722;">Overview of Transaction Processing:</h4>
+    <p style="margin-bottom: 15px;">Transaction processing refers to the collection, modification, and storage of data in a database system. It ensures that all database operations are completed successfully, adhering to the ACID properties (Atomicity, Consistency, Isolation, Durability).</p>
+
+    <h4 style="color: #2196F3;">Key Concepts:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: disc; padding-left: 20px;">
+      <li><strong>Atomicity:</strong> Ensures that all operations within a transaction are completed; if not, the transaction is aborted.</li>
+      <li><strong>Consistency:</strong> Guarantees that a transaction will bring the database from one valid state to another, maintaining all predefined rules.</li>
+      <li><strong>Isolation:</strong> Ensures that transactions are securely and independently processed at the same time without interference.</li>
+      <li><strong>Durability:</strong> Guarantees that once a transaction is committed, it will remain so, even in the event of a system failure.</li>
+    </ul>
+
+    <h4 style="color: #4CAF50;">Transaction Process Overview</h4>
+    <p style="margin-bottom: 15px;">This section focused on the implementation and management of transaction processes within a relational database, emphasizing the importance of ACID properties in maintaining data integrity and reliability during operations.</p>
+
+    <h4 style="color: #9C27B0;">Challenges and Solutions:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: circle; padding-left: 20px;">
+      <li><strong>Challenge:</strong> Ensuring atomicity in the presence of system failures or errors.</li>
+      <li><strong>Solution:</strong> Implemented logging mechanisms and rollback procedures to revert incomplete transactions.</li>
+      <li><strong>Challenge:</strong> Managing concurrent transactions while ensuring data integrity.</li>
+      <li><strong>Solution:</strong> Applied isolation levels and locking mechanisms to prevent data conflicts and ensure consistency.</li>
+    </ul>
+
+    <h4 style="color: #FFC107;">Reflection:</h4>
+    <p style="margin-bottom: 0;">This assignment enhanced my understanding of transaction processing in databases. I learned how critical the ACID properties are to ensure reliable and effective data management in systems that require high availability and integrity.</p>
+
+    <h4 style="color: #00BCD4;">Practical Applications:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: square; padding-left: 20px;">
+      <li>Implementing transaction management in banking systems to ensure secure fund transfers.</li>
+      <li>Designing reservation systems that maintain data consistency when multiple users access shared resources.</li>
+      <li>Utilizing transaction logs for auditing purposes and recovering from system failures.</li>
+    </ul>
+
+    <div class="collapse show" id="collapseTransaction" aria-labelledby="headingTransaction" data-parent="#accordion">
+      <div class="img-box">
+        <img src="tran1.jpg" alt="Transaction Process Diagram" style="max-width: 100%; height: auto;"> 
+      </div>
+    </div>
   </div>
 </div>
 
-<div id="structuredEnquiryModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('structuredEnquiryModal')">&times;</span>
-    <h3 style="color: #9C27B0; font-family: 'Poppins', sans-serif;">Structured Enquiry</h3>
-    <img src="SE21.jpg" alt="Structured Enquiry 21">
-    <img src="SE1.jpg" alt="Structured Enquiry 1">
-    <img src="SE2.jpg" alt="Structured Enquiry 2">
-    <img src="SE3.jpg" alt="Structured Enquiry 3">
-    <img src="SE4.jpg" alt="Structured Enquiry 4">
-    <img src="SE5.jpg" alt="Structured Enquiry 5">
-    <img src="SE6.jpg" alt="Structured Enquiry 6">
-    <img src="SE7.jpg" alt="Structured Enquiry 7">
-    <img src="SE8.jpg" alt="Structured Enquiry 8">
-    <img src="SE9.jpg" alt="Structured Enquiry 9">
-    <img src="SE10.jpg" alt="Structured Enquiry 10">
-    <img src="SE11.jpg" alt="Structured Enquiry 11">
-    <img src="SE12.jpg" alt="Structured Enquiry 12">
-    <img src="SE13.jpg" alt="Structured Enquiry 13">
-    <img src="SE14.jpg" alt="Structured Enquiry 14">
-    <img src="SE15.jpg" alt="Structured Enquiry 15">
-    <img src="SE16.jpg" alt="Structured Enquiry 16">
-    <img src="SE17.jpg" alt="Structured Enquiry 17">
-    <img src="SE18.jpg" alt="Structured Enquiry 18">
-    <img src="SE19.jpg" alt="Structured Enquiry 19">
-    <img src="SE20.jpg" alt="Structured Enquiry 20">
-    <img src="SE29.jpg" alt="Structured Enquiry 29">
-    <img src="SE22.jpg" alt="Structured Enquiry 22">
-    <img src="SE23.jpg" alt="Structured Enquiry 23">
-    <img src="SE24.jpg" alt="Structured Enquiry 24">
-    <img src="SE25.jpg" alt="Structured Enquiry 25">
-    <img src="SE26.jpg" alt="Structured Enquiry 26">
-    <img src="SE27.jpg" alt="Structured Enquiry 27">
-    <img src="SE28.jpg" alt="Structured Enquiry 28">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="structuredEnquiryModal" class="modal" style="font-family: 'Poppins', sans-serif;">
+  <div class="modal-content" style="padding: 20px; border-radius: 10px; background-color: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <span class="close" onclick="closeModal('structuredEnquiryModal')" style="font-size: 24px; cursor: pointer; float: right; color: #9C27B0;">&times;</span>
+    <h3 style="color: #9C27B0; margin-bottom: 20px;">Structured Inquiry</h3>
+
+    <h4 style="color: #FF5722;">Overview of Structured Inquiry:</h4>
+    <p style="margin-bottom: 15px;">Structured inquiry is a systematic approach to collecting and analyzing data to draw conclusions and inform decision-making. It emphasizes clarity, reproducibility, and the use of rigorous methods to ensure the reliability of findings.</p>
+
+    <h4 style="color: #2196F3;">Key Concepts:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: disc; padding-left: 20px;">
+      <li><strong>Research Questions:</strong> Clearly defined questions that guide the inquiry process.</li>
+      <li><strong>Data Collection:</strong> Utilization of various methods (e.g., surveys, interviews, experiments) to gather relevant information.</li>
+      <li><strong>Data Analysis:</strong> Systematic examination of data to identify patterns, trends, and insights.</li>
+      <li><strong>Conclusion Drawing:</strong> Formulating conclusions based on analyzed data to address the research questions.</li>
+    </ul>
+
+    <h4 style="color: #4CAF50;">Structured Inquiry Process Overview</h4>
+    <p style="margin-bottom: 15px;">This section focused on applying structured inquiry principles to investigate a specific problem within the context of database management, highlighting the importance of systematic data collection and analysis.</p>
+
+    <h4 style="color: #9C27B0;">Challenges and Solutions:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: circle; padding-left: 20px;">
+      <li><strong>Challenge:</strong> Ensuring that the research questions are specific and measurable.</li>
+      <li><strong>Solution:</strong> Developed clear, focused questions through iterative discussions and feedback sessions.</li>
+      <li><strong>Challenge:</strong> Collecting reliable data from diverse sources.</li>
+      <li><strong>Solution:</strong> Employed mixed methods for data collection to triangulate findings and enhance validity.</li>
+    </ul>
+
+    <h4 style="color: #FFC107;">Reflection:</h4>
+    <p style="margin-bottom: 0;">This assignment significantly improved my understanding of structured inquiry methodologies. I learned how to formulate research questions, systematically collect data, and analyze it to make informed decisions, ultimately enhancing the quality of database management practices.</p>
+
+    <h4 style="color: #00BCD4;">Practical Applications:</h4>
+    <ul style="margin-bottom: 15px; list-style-type: square; padding-left: 20px;">
+      <li>Conducting market research to understand user needs and preferences for a new database system.</li>
+      <li>Evaluating the performance of existing database solutions through structured data collection and analysis.</li>
+      <li>Utilizing structured inquiry to inform policy decisions regarding data management and security protocols.</li>
+    </ul>
+
+    <div class="collapse show" id="collapseStructuredInquiry" aria-labelledby="headingStructuredInquiry" data-parent="#accordion">
+      <div class="img-box">
+        <img src="st1.jpg" alt="Structured Inquiry Diagram" style="max-width: 100%; height: auto;"> 
+        <img src="st2.jpg" alt="Structured Inquiry Diagram" style="max-width: 100%; height: auto;"> 
+      </div>
+    </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
 
 <!-- Modal CSS -->
 <style>
@@ -328,95 +550,6 @@ function closeModal(modalId) {
 }
 </script>
 <!-- end category section -->
-
-<!-- ASSIGNIMENT -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h1 {
-            margin-top: 20px;
-            font-size: 2.5em;
-            color: #5a5af0;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px;
-        }
-
-        .assignment {
-            background: #fff;
-            border: 2px solid #5a5af0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 250px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-
-        .assignment:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .assignment h2 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-            color: #333;
-        }
-
-        .assignment a {
-            display: inline-block;
-            background: #5a5af0;
-            color: #fff;
-            text-decoration: none;
-            font-size: 1em;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .assignment a:hover {
-            background: #4747d1;
-        }
-    </style>
-</head>
-<body>
-    <h1>My Assignments</h1>
-    
-    <div class="container">
-        <div class="assignment">
-            <h2>Assignment 1</h2>
-            <a href="pdf1.pdf" target="_blank">View Assignment 1</a>
-        </div>
-        
-        <div class="assignment">
-            <h2>Assignment 2</h2>
-            <a href="pdf2.pdf" target="_blank">View Assignment 2</a>
-        </div>
-    </div>
-</body>
-</html>
 
 
 
